@@ -1,0 +1,309 @@
+* 
+body, html {
+    margin: 0;
+    color: white;
+    font-family: Inter;
+}
+
+:root {
+    background-color: rgb(29, 28, 28);
+}
+
+::selection {
+    background-color: #000;
+    color: gray;
+}
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10px;
+    margin: 10px;
+}
+
+.nav2container {
+
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    padding: 10px;
+    align-items: first baseline;
+}
+
+a:hover {
+    color: rgb(165, 165, 165);
+    text-decoration: underline;
+}
+
+
+.logo {
+    width: 40px;
+}
+
+.post {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 70px;
+}
+
+/* navbar */
+
+.navContainer {
+    margin: 10;
+    padding: px;
+    
+}
+
+.navContainer.scrolled {
+    background-color: black; /* Ganti warna header saat di-scroll */
+    animation: ease-in;
+    animation-timeline: scroll();
+}
+
+.wrapper {
+    box-shadow: 0 -5px 5px -5px rgba(78, 78, 78, 0.5);
+    background-color: rgb(29, 28, 28);/**/
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 17px;
+    font-size: 17px;
+    height: px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.lastname {
+    color: darkgrey;
+    padding-left: px;
+}
+
+.navigation {
+    display: flex;
+    align-items: left;
+    padding-left: 1px;
+    justify-content: top;
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 1px;
+    
+}
+
+.navigation>li>a {
+    color: aliceblue;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navigation>li>a:hover {
+    color: darkgray;
+    
+}
+
+.navigation>li>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.navigation>li>img:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 10;
+    transition: all .3s ease-in-out;
+} 
+
+.navigation li ul li a {
+    /*justify-content: center;*/
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.dropdown {
+    list-style: none;
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    padding-left: 10px;
+}
+
+.dropdown-content ul li{
+    position: fixed;
+    top: 0%;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    font-size: 17px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(29, 28, 28);
+    padding-left: 10px;
+    left: 90px;
+}
+
+.dropdown-content ul li:hover{
+    display: flex;
+}
+
+.dropdown-content:hover{
+    display: flex;
+}
+
+.active {
+    background-color: grey;
+    padding: 10px;
+}
+
+.active:hover {
+    color: white !important;
+    border-radius: 20vh;
+    transform: none
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 0%;
+}
+
+.bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+    stroke: darkcyan;
+    stroke-width: 4%;
+    position: fixed;
+    left: 0%;
+    animation: progress;
+    animation-timeline: scroll();
+    transform-origin: 0%;
+}
+
+@keyframes progress {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* tes div */
+
+.content {
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.isi {
+    font-size: small;
+}
+
+.div-content {
+    padding: 5%;
+}
+
+button {
+    font-size: 25px;
+    padding: 20px 50px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+    padding: 400%;
+    size: 100%;
+    width: 10%;
+    height: 10%;
+    background-color: #000;
+    
+}
+
+input[type="checkbox"]:active{
+    border-radius: 100%;
+    background-color: black;
+    color: #000;
+}
+
+button:active {
+    background-color: rgb(51, 66, 66);
+    transition: all 100ms;
+    border-radius: 20px;
+}
+
+.navContainer::before {
+    background-color: #000;
+}
+
+.navContainer::before::after {
+    opacity: 100%;
+    transition: all 1s;
+}
+
+.pic-header {
+    top: 1%;
+    padding: auto;
+    width: 100%;
+}
+
+.footer {
+    bottom: 0%;
+    width: 100%;
+    background-color: #222222;
+}
+
+
+
+.footcontainer {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 1px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.footer img {
+    width: 40px;
+}
