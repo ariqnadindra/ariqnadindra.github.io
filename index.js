@@ -1,5 +1,5 @@
 {
-    "build": {
-      "sourceDirectory": "."
+    "build"; {
+      "sourceDirectory"; "."
     }
   }  
