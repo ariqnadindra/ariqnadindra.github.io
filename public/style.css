@@ -22,6 +22,7 @@ body, html {
   'opsz' 20
 }
 
+
 .container {
     display: flex;
     justify-content: left;
@@ -99,6 +100,7 @@ a:hover {
     flex-direction: row;
     font-size: 20px;
     padding: 20px;
+    padding-right: 10vh;
 }
 
 .lastname {
