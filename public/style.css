@@ -45,7 +45,6 @@ a {
     text-decoration: none;
     color: rgb(196, 196, 196);
     padding: 10px;
-    align-items: first baseline;
 }
 
 a:hover {
@@ -73,25 +72,25 @@ a:hover {
     
 }
 
-.navContainer.scrolled {
+.navContainer::-webkit-scrollbar {
     background-color: black; /* Ganti warna header saat di-scroll */
     animation: ease-in;
     animation-timeline: scroll();
 }
 
 .wrapper {
-    box-shadow: 0 -5px 5px -5px rgba(78, 78, 78, 0.5);
     background-color: rgb(29, 28, 28);/**/
     position: fixed;
     top: 0%;
     width: 100%;
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-    padding-left: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 17px;
-    height: px;
+    
 }
 
 .brand {
@@ -99,14 +98,9 @@ a:hover {
     align-items: center;
     flex-direction: row;
     font-size: 20px;
-    padding: 20px;
-    padding-right: 10vh;
+    padding : 10px;
 }
 
-.lastname {
-    color: darkgrey;
-    padding-left: px;
-}
 
 .navigation {
     display: flex;
@@ -238,8 +232,9 @@ padding-right: 5%;
     font-size: small;
 }
 
-.div-content {
-    padding: 5%;
+.div-content div ul li {
+    list-style: none;
+    display: inline-block;
 }
 
 button {
@@ -282,22 +277,21 @@ button:active {
     transition: all 1s;
 }
 
-.pic-header {
-    top: 1%;
-    padding: auto;
-    width: 100%;
-}
-
 .footer {
+    position: fixed;
     bottom: 0%;
     width: 100%;
 }
 
-
+.div-content>p {
+    padding-left: 5%;
+    font-size: 75px;
+    text-decoration: line-through;
+}
 
 .footcontainer {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 1px;
     justify-content: space-between;
     display: flex;
@@ -305,6 +299,47 @@ button:active {
     font-size: 10px;
 }
 
-.footer img {
-    width: 40px;
+@media screen and (max-width: 465px){
+
+    .div-content div ul li {
+        list-style: none;
+        display: block;
+        font-size: 40px;
+    }
+
+    .div-content>p {
+        font-size: 55px;
+        margin-left: 20px;
+        padding-top: 10%;
+    }
+
 }
+
+@media screen and (max-width: 320px){
+    
+    .navContainer {
+
+    }
+
+    .div-content>p {
+        font-size: 30px;
+        padding-left: 5px;
+        padding-top: 15%;
+    }
+
+    .div-content div ul li {
+        list-style: none;
+        display: block;
+        font-size: 40px;
+    }
+
+    .footer {
+        font-size: 10px;
+        padding: 1px;
+    }
+
+    .footcontainer {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 10px;
+    }
