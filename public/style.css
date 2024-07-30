@@ -315,30 +315,8 @@ button:active {
     .div-content>p {
         font-size: 30px;
         margin-left: 20px;
-        padding-top: 10%;
-    }
-
-}
-
-@media screen and (max-width: 320px){
-    
-
-
-    .div-content>p {
-        font-size: 30px;
         padding-left: 5px;
         padding-top: 15%;
-    }
-
-    .div-content div ul li {
-        list-style: none;
-        display: block;
-        font-size: 40px;
-    }
-
-    .footer {
-        font-size: 10px;
-        padding: 1px;        
     }
 
     .footcontainer {
@@ -346,3 +324,4 @@ button:active {
         margin-right: 20px;
         font-size: 10px;
     }
+}
