@@ -291,16 +291,20 @@ button:active {
 }
 
 .footcontainer {
+    display: flex;
     margin-left: 20px;
     margin-right: 20px;
     padding: 1px;
     justify-content: space-between;
-    display: flex;
     align-items: center;
     font-size: 10px;
 }
 
-@media screen and (max-width: 465px){
+@media screen and (max-width: 425px){
+
+    .content{
+        padding-left: 1%;
+    }
 
     .div-content div ul li {
         list-style: none;
@@ -309,7 +313,7 @@ button:active {
     }
 
     .div-content>p {
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 20px;
         padding-top: 10%;
     }
@@ -318,9 +322,7 @@ button:active {
 
 @media screen and (max-width: 320px){
     
-    .navContainer {
 
-    }
 
     .div-content>p {
         font-size: 30px;
@@ -336,8 +338,7 @@ button:active {
 
     .footer {
         font-size: 10px;
-        padding: 1px;
-        display: flex;
+        padding: 1px;        
     }
 
     .footcontainer {
