@@ -279,6 +279,7 @@ button:active {
 }
 
 .footer {
+    background-color: rgb(29, 28, 28);
     position: fixed;
     bottom: 0%;
     width: 100%;
